@@ -76,7 +76,7 @@ spring:
     thymeleaf:
         mode: XHTML
     kafka:
-      bootstrap-servers: ${spring.embedded.kafka.brokers}
+      bootstrap-servers: ${spring.embedded.kafka.brokers:http://localhost:9200}
       consumer:
        auto-offset-reset: earliest
        group-id: boot

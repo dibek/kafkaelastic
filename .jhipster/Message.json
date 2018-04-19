@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "10"
+        },
+        {
+            "fieldName": "messageBody",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "2000"
+        },
+        {
+            "fieldName": "dateInsert",
+            "fieldType": "Instant"
+        }
+    ],
+    "changelogDate": "20180419152251",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "message",
+    "pagination": "pagination"
+}

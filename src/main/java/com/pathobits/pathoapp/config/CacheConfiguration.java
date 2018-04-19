@@ -43,6 +43,7 @@ public class CacheConfiguration {
             cm.createCache(com.pathobits.pathoapp.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.pathobits.pathoapp.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.pathobits.pathoapp.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.pathobits.pathoapp.domain.Message.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
